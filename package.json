@@ -1,0 +1,53 @@
+{
+  "name": "@amlhubs/ontolex",
+  "version": "0.0.1",
+  "description": "W3C OntoLex-Lemon — Lexicon Model for Ontologies (Final Community Group Report 2016-05-10) and the SynSem, Decomposition, Variation/Translation, and Lime modular vocabularies. TypeScript surface specializing UML/MOF/SBVR for binding lexical entries to ontology concepts.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amlhubs/ontolex.git",
+    "directory": "."
+  },
+  "keywords": [
+    "ontolex",
+    "ontolex-lemon",
+    "lemon",
+    "w3c",
+    "ontology",
+    "lexicon",
+    "metamodel",
+    "owl",
+    "rdfs",
+    "linguistics",
+    "agenihub",
+    "amlhubs"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@amlhubs/uml": "^0.0.2",
+    "@amlhubs/mof": "^0.0.2",
+    "@amlhubs/sbvr": "^0.0.1"
+  },
+  "devDependencies": {
+    "@amlhubs/uml": "^0.0.2",
+    "@amlhubs/mof": "^0.0.2",
+    "@amlhubs/sbvr": "^0.0.1",
+    "typescript": "^5.5.0"
+  }
+}
